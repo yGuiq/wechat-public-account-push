@@ -23,7 +23,8 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'oDDJk6oLvp3IAKBTf1O5fE2J41E8',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '{{date.DATA}}  
+      useTemplateId: '
+      {{date.DATA}}  
 城市：{{city.DATA}}  
 天气：{{weather.DATA}}  
 最低气温: {{min_temperature.DATA}}  
@@ -53,16 +54,14 @@ const USER_CONFIG = {
       customizedDateList: [
         // 在一起的日子
         { keyword: 'love_day', date: '2022-10-13' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
   ],
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '服务器信息：{{post_time_zone.DATA}} {{post_time.DATA}}
-
+  CALLBACK_TEMPLATE_ID: '
+服务器信息：{{post_time_zone.DATA}} {{post_time.DATA}}
 共推送 {{need_post_num.DATA}} 人
 成功: {{success_post_num.DATA}} | 失败: {{fail_post_num.DATA}}
 成功用户: {{success_post_ids.DATA}}

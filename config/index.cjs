@@ -21,7 +21,7 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '乖宝',
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'wxa27cadb824cce33f',
+      id: 'oDDJk6oLvp3IAKBTf1O5fE2J41E8',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
       useTemplateId: '{{date.DATA}}  
 城市：{{city.DATA}}  
@@ -61,7 +61,12 @@ const USER_CONFIG = {
 
 
   // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
+  CALLBACK_TEMPLATE_ID: '服务器信息：{{post_time_zone.DATA}} {{post_time.DATA}}
+
+共推送 {{need_post_num.DATA}} 人
+成功: {{success_post_num.DATA}} | 失败: {{fail_post_num.DATA}}
+成功用户: {{success_post_ids.DATA}}
+失败用户: {{fail_post_ids.DATA}}',
 
   CALLBACK_USERS: [
     {
